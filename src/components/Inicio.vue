@@ -3,6 +3,7 @@
         <b-row class="nav d-flex justify-content-end">
             <b-col cols="12" id="navbar">
                 <b-button variant="primary" @click="goToBookForm">Crear libro</b-button>
+                <b-button variant="primary" @click="goToBookList">Lista de libros</b-button>
             </b-col>
         </b-row>
       <b-col cols="8" class="body-fixed">
@@ -29,6 +30,9 @@
     methods: {
       goToBookForm() {
         this.$router.push('/book-form');
+      },
+      goToBookList() {
+        this.$router.push('/book-list');
       },
       addBook(newBook) {
         this.books.push(newBook);

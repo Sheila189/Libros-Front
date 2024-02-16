@@ -22,6 +22,11 @@ const routes=[
                 name: 'book-form',
                 component: ()=>import('../components/BookForm.vue')
             },
+            {
+                path:'/book-list',
+                name: 'book-list',
+                component: ()=>import('../components/BookList.vue')
+            },
         ]
     }
 ]
